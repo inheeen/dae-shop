@@ -9,7 +9,8 @@ $col1: #B36050
 $white: #F6F4EC
 $hover-col: #7B4B40
 $green: #A9AE8D
-
+$col2: #B45F4D
+$col-box: #DF9B7A
 
 .body
     overflow: hidden
@@ -17,12 +18,12 @@ $green: #A9AE8D
 .container
     max-width: 1140px
     margin: 0 auto
+    padding: 0px
 
 .first-section
     &__main-container
         background: url("../img/bgc.png") center
         background-repeat: no-repeat
-        /* background-attachment: fixed */
         background-size: cover
         min-height: 435px
     &__button
@@ -121,6 +122,7 @@ label
     border: $col1
 
 .second-container
+    padding-bottom: 60px
     &__title
         padding-top: 70px
         color: $white
@@ -133,3 +135,182 @@ label
         font-family: "roboto"
         margin-bottom: 30px
         color: $white
+    &__btn
+        text-decoration: none
+        background-color: $green
+        border: none
+        color: $white
+        font-size: 16px
+        font-family: "roboto"
+        padding-left: 0px
+        &:hover
+            color: $col1
+
+.second-section
+    background-color: #F6F4EC
+    &__content-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-top: 32px
+    &__title
+        color: $col2
+        font-size: 23px
+        margin-bottom: 44px
+    &__catalog-box
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+
+.items-box
+    color: $col2
+    font-family: "roboto"
+    &__img
+       width: 300px
+       margin-bottom: 10px
+    &__title
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 8px
+    &__text
+        margin-bottom: 86px
+        font-size: 16px
+
+.third-section
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__content-container
+        margin-bottom: 30px
+    &__img
+        padding-top: 64px
+        max-width: 1140px
+    &__text-box
+        height: 92px
+        background-color: $col-box
+        position: relative
+        padding: 0px
+        top: -30px
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__text
+        text-transform: uppercase
+        color: $white
+        font-size: 20px
+        padding-left: 30px
+        margin-right: 400px
+    &__btn
+        border: none
+        background-color: $col-box
+        font-size: 18px
+        color: $white
+        text-decoration: none
+        &:hover
+            color: $col1
+
+.four-section
+    background-color: #F1D3B9
+    min-height: 1050px
+    &__content-container
+        position: relative
+        top: 60px
+        display: flex
+        flex-direction: row
+        align-items: center
+        color: $col1
+        font-family: "roboto"
+    &__img
+        position: relative
+        left: 60px
+        z-index: 1
+    &__text-box
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        right: 50px
+        top: 30px
+        width: 520px
+        height: 580px
+        background-color: $white
+        z-index: 5
+    &__title
+        padding-top: 60px
+        font-size: 30px
+        margin-bottom: 22px
+    &__text
+        font-size: 19px
+        line-height: 32px
+        padding-left: 50px
+        padding-right: 50px
+        margin-bottom: 40px
+    &__link
+        font-family: "roboto"
+        text-decoration: none
+        color: $col1
+        font-size: 16px
+        &:hover
+            color: $hover-col
+
+.five-section
+    &__content-container
+        padding-top: 25px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        margin-bottom: 46px
+        font-size: 24px
+        color: black
+        font-family: "roboto"
+    &__title-link
+        text-decoration: none
+        margin-bottom: 46px
+        font-size: 24px
+        color: black
+        font-family: "roboto"
+        &:hover
+            color: $hover-col
+
+.img-box
+    &__img
+        width: 200px
+        margin-right: 5px
+        &:last-child
+            margin-right: 0px
+
+.footer
+    background-color: #F6F4EC
+    &__content-container
+        display: flex
+        flex-direction: column
+        padding-top: 60px
+    &__first-section
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 100px
+    &__texts-one
+        display: flex
+        flex-direction: row
+    &__box-first
+        margin-right: 50px
+    &__text
+        color: #B45F4D
+        font-size: 14px
+        font-family: "roboto"
+        margin-bottom: 12px
+
+.footer-title
+    margin-bottom: 20px
+
+.second-section
+    &__texts
+        color: #B45F4D
+        font-size: 14px
+        font-family: "roboto"
+        margin-bottom: 12px
+        margin-bottom: 60px

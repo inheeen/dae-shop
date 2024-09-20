@@ -70,7 +70,8 @@
                           </div>
                           <!-- корзина -->
                           <div class="header__bag-box" id="easynetshop-cart" >
-                            <img src="./src/icons/Vector.png" alt="" class="header__bag-img">
+                            <button class="shopping__btn">
+                            </button>
                           </div>
                       </div>
                 </div>
@@ -97,17 +98,51 @@
                 <div class="catalog-box__items-box items-box">
                     <img src="./src/img/1.png" alt="" class="items-box__img">
                     <p class="items-box__title">The Daedreamer Set</p>
-                    <p class="items-box__text">$49.00</p>
+                    <div class="product__price price1"><span class="product__price-number">$</span>32 </div>
+                    <div class="product__size">
+                      <div class="product__size-element" data-sb-curent-price="$24" data-sb-curent-size="500" data-sb-curent-id-or-vendor-code="08">ver 1</div>
+                      <div class="product__size-element" data-sb-curent-price="$64" data-sb-curent-size="1000" data-sb-curent-id-or-vendor-code="012">ver 2</div>
+                    </div>
+                    <div class="product__quantity"></div>
+                    <button class="items-box__btn"
+                      data-sb-id-or-vendor-code="0101"
+                      data-sb-product-name="The Daedreamer Set"
+                      data-sb-product-price="32"
+                      data-sb-product-quantity="1"
+                      data-sb-product-img="./src/img/1.png" href="#">Buy now</button>
                 </div>
                 <div class="catalog-box__items-box items-box">
                     <img src="./src/img/2.png" alt="" class="items-box__img">
                     <p class="items-box__title">Shampoo</p>
-                    <p class="items-box__text">$24.00 to $64.00</p>
+                    <div class="product__price price1"><span class="product__price-number"></span>$24.00 to $64.00</div>
+                    <div class="product__size">
+                      <div class="product__size-element" data-sb-curent-price="$24" data-sb-curent-size="500" data-sb-curent-id-or-vendor-code="038">500 ml</div>
+                      <div class="product__size-element" data-sb-curent-price="$64" data-sb-curent-size="1000" data-sb-curent-id-or-vendor-code="042">1000 ml</div>
+                    </div>
+                    <div class="product__quantity"></div>
+                    <button class="items-box__btn"
+                      data-sb-id-or-vendor-code="0102"
+                      data-sb-product-name="Shampoo"
+                      data-sb-product-price="24"
+                      data-sb-product-quantity="1"
+                      data-sb-product-img="./src/img/1.png" href="#">Buy now</button>
                 </div>
                 <div class="catalog-box__items-box items-box">
                     <img src="./src/img/3.png" alt="" class="items-box__img">
                     <p class="items-box__title">Conditioner</p>
-                    <p class="items-box__text">$24.00 to $64.00</p>
+                    <div class="product__price price1"><span class="product__price-number"></span>$24.00 to $64.00</div>
+                    <div class="product__size">
+                        <div class="product__size-element" data-sb-curent-price="$24" data-sb-curent-size="38" data-sb-curent-id-or-vendor-code="038">500 ml</div>
+                        <div class="product__size-element" data-sb-curent-price="$64" data-sb-curent-size="1000" data-sb-curent-id-or-vendor-code="042">1000 ml</div>
+                    </div>
+
+                    <div class="product__quantity"></div>
+                    <button class="items-box__btn"
+                      data-sb-id-or-vendor-code="0103"
+                      data-sb-product-name="Conditioner"
+                      data-sb-product-price="24"
+                      data-sb-product-quantity="1"
+                      data-sb-product-img="./src/img/1.png" href="#">Buy now</button>
                 </div>
              </div>
         </div>
@@ -146,6 +181,7 @@
             </div>
         </div>
      </section>
+     <!-- подвал -->
      <footer class="footer">
         <div class="footer__content-container container">
             <div class="footer__first-section first-section">
@@ -175,5 +211,30 @@
         </div>
      </footer>
     <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./smartbasket/css/smartbasket.min.css">
+    <div class="smart-basket__wrapper"></div>
+    <script src="./smartbasket/js/smartbasket.min.js"></script>
+    <script>
+      $(function () {
+        $('.smart-basket__wrapper').smbasket({
+          productElement: 'items-box',
+          buttonAddToBasket: 'items-box__btn',
+          productPrice: 'product__price-number',
+          productSize: 'product__size-element',
+          productQuantityWrapper: 'product__quantity',
+          smartBasketMinArea: 'shopping__btn',
+          countryCode: '+7',
+          smartBasketCurrency: '$',
+          smartBasketMinIconPath: './src/icons/Vector.png',
+          agreement: {
+            isRequired: true,
+            isChecked: true,
+            isLink: 'https://artstranger.ru/privacy.html',
+          },
+          nameIsRequired: false,
+        });
+      });
+    </script>
 </body>
 </html>

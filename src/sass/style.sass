@@ -81,8 +81,7 @@ $col-box: #DF9B7A
         display: flex
         flex-direction: row
         align-items: center
-
-
+        
 .header-container
     padding-top: 10px
     display: flex
@@ -146,6 +145,15 @@ label
         &:hover
             color: $col1
 
+.product
+    &__price
+        margin-bottom: 20px
+        
+.shopping__btn
+    border: none
+    display: flex
+    align-items: center
+    background-color: $white
 .second-section
     background-color: #F6F4EC
     &__content-container
@@ -161,12 +169,20 @@ label
     &__catalog-box
         display: flex
         flex-direction: row
-        align-items: center
+        align-items: flex-start
         justify-content: space-between
 
+.product
+    &__size
+        display: flex
+        flex-direction: row
+    &__size-element
+        margin-right: 20px
+        margin-bottom: 20px
 .items-box
     color: $col2
     font-family: "roboto"
+    margin-bottom: 40px
     &__img
        width: 300px
        margin-bottom: 10px
@@ -175,7 +191,7 @@ label
         text-transform: uppercase
         margin-bottom: 8px
     &__text
-        margin-bottom: 86px
+        margin-bottom: 26px
         font-size: 16px
 
 .third-section

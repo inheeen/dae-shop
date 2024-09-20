@@ -38,6 +38,7 @@
 }
 
 .smart-basket_active {
+   background-color: transparent;
    -webkit-transition: .8s;
    -o-transition: .8s;
    transition: .8s;
@@ -64,6 +65,7 @@ product__price {
     margin-bottom: 20px;
 }
 .smart-basket__form {
+   background-color: #fff;
    width: 100%;
    max-width: 1000px;
    margin: 0 auto;
@@ -74,6 +76,7 @@ product__price {
 }
 
 .smart-basket__product-item {
+   background-color: #fff;
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -558,6 +561,7 @@ product__price {
 
 @media (max-width:768px) {
    .smart-basket__user-info {
+      background-color: #fff;
       padding: 30px 0
    }
 }
@@ -751,6 +755,7 @@ product__price {
 }
 
 .smart-basket__result-common {
+   background-color: #fff;
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -850,7 +855,7 @@ product__price {
 }
 
 .smart-basket__send-form {
-   background: #1bbc9b;
+   background: #bc1b1b;
    border: none;
    padding: 15px 25px;
    color: #fff;
@@ -859,7 +864,9 @@ product__price {
    cursor: pointer;
    border-radius: 3px
 }
-
+.smart-basket__send-form:hover {
+   background: #7B4B40
+}
 @media (max-width:768px) {
    .smart-basket__send-form {
       width: 49%;
@@ -868,10 +875,10 @@ product__price {
 }
 
 .smart-basket__close-form {
-   background: #3598dc;
+   background: none;
    border: none;
    padding: 15px 25px;
-   color: #fff;
+   color: #bc1b1b;
    font-size: 16px;
    -webkit-appearance: none;
    cursor: pointer;
@@ -1034,12 +1041,13 @@ product__price {
 }
 
 .smart-basket__alert-button_close {
-   background: #ff1463;
+   background: white;
+   color: #bc1b1b;
    width: 48%
 }
 
 .smart-basket__alert-button_close:hover {
-   background: #cff300
+   background: white;
 }
 
 @media (max-width:450px) {
@@ -1055,7 +1063,7 @@ product__price {
 }
 
 .smart-basket__alert-button_by:hover {
-   background: #1cd1ad
+   background: #7B4B40
 }
 
 @media (max-width:450px) {
